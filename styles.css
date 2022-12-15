@@ -2,6 +2,8 @@
 
 :root {
   --primary-color: #9d174d;
+  --dark-zinc: #18181b;
+
 }
 
 body {
@@ -74,4 +76,25 @@ hr {
 
 .navigation .link-active {
   font-weight: bold;
+}
+
+/** styles for header **/
+
+.hero{
+    padding: 2rem;
+}
+
+.hero .hero-image {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    padding-top: 1rem;
+ color: var(--dark-zinc)
+}
+
+span {
+ color: var(--primary-color)
 }
