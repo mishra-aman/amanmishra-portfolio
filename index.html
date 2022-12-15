@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Component Library</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Welcome to Aman's component library</h1>
@@ -32,7 +32,9 @@
     <h2>@Container</h2>
 
     <h3>Fluid Container</h3>
-    <div class="container">This is a fluid container and it will go till the end of the page</div>
+    <div class="container">
+      This is a fluid container and it will go till the end of the page
+    </div>
 
     <h3>Center container</h3>
     <div class="container container-center">
@@ -43,7 +45,7 @@
     <h2>@Links</h2>
 
     <a class="link link-primary" href="/">Primary Link</a>
-    <a  class="link link-secondary" href="/">Secondary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
 
     <hr />
 
@@ -61,7 +63,7 @@
     <h3>Unordered inline list</h3>
     <ul class="list-non-bullet">
       <li class="list-item-inline">Inline Item</li>
-      <li class="list-item-inline"> Inline Item Two</li>
+      <li class="list-item-inline">Inline Item Two</li>
       <li class="list-item-inline">Inline Item Three</li>
     </ul>
 
@@ -75,12 +77,14 @@
     <hr />
 
     <h2>@Nav</h2>
-    <nav>
-      <div>iAmBrand</div>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Projects</a></li>
-        <li><a href="/">Blogs</a></li>
+    <nav class="navigation container">
+      <div class="nav-brand">iAmBrand</div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link link-active" href="/">Home</a>
+        </li>
+        <li class="list-item-inline"><a class="link" href="/">Projects</a></li>
+        <li class="list-item-inline"><a class="link" href="/">Blogs</a></li>
       </ul>
     </nav>
 
