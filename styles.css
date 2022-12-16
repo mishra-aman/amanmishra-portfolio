@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: #9d174d;
+  --off-white: #e5e7eb;
   --dark-zinc: #18181b;
-
 }
 
 body {
@@ -80,21 +80,37 @@ hr {
 
 /** styles for header **/
 
-.hero{
-    padding: 2rem;
+.hero {
+  padding: 2rem;
 }
 
 .hero .hero-image {
-    max-width: 350px;
-    display: block;
-    margin: auto;
+  max-width: 350px;
+  display: block;
+  margin: auto;
 }
 
 .hero .hero-heading {
-    padding-top: 1rem;
- color: var(--dark-zinc)
+  padding-top: 1rem;
+  color: var(--dark-zinc);
 }
 
 span {
- color: var(--primary-color)
+  color: var(--primary-color);
+}
+
+/** styles for section **/
+
+.section {
+  padding: 2rem;
+  /* border: 1px solid red; */
+  margin: -8px;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.ow {
+  background-color: var(--off-white);
 }
