@@ -110,7 +110,6 @@ span {
 
 .section {
   padding: 3rem;
-  /* border: 1px solid red; */
   margin: -8px;
 }
 
@@ -145,7 +144,6 @@ span {
 
 /** projects **/
 .showcase-list {
-  /* padding: 2rem; */
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
