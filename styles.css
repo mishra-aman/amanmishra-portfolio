@@ -8,12 +8,14 @@
 
 body {
   font-family: "Quicksand", sans-serif;
-  margin: 0px;
+  margin: 0px auto;
+ 
 }
 
 hr {
   margin: 2rem 0rem;
 }
+
 /** container styles **/
 
 .container {
@@ -21,7 +23,7 @@ hr {
 }
 
 .container-center {
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -29,7 +31,8 @@ hr {
 
 .link {
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
+  box-sizing: border-box;
 }
 
 .link-primary {
@@ -47,6 +50,7 @@ hr {
 
 .list-non-bullet {
   list-style: none;
+
 }
 
 .list-item-inline {
@@ -83,6 +87,7 @@ hr {
 
 .hero {
   padding: 2rem;
+  padding-top: 5rem;
 }
 
 .hero .hero-image {
@@ -104,7 +109,7 @@ span {
 /** styles for section **/
 
 .section {
-  padding: 2rem;
+  padding: 3rem;
   /* border: 1px solid red; */
   margin: -8px;
 }
@@ -129,6 +134,72 @@ span {
 .footer .link {
   color: white;
 }
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
 .footer ul {
   padding-inline-start: 0px;
+}
+
+/** projects **/
+.showcase-list {
+  /* padding: 2rem; */
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 3rem auto;
+}
+.showcase-list h1 {
+  margin: 0.5rem;
+}
+
+.showcase-list p {
+  padding-bottom: 1rem;
+}
+
+/** blogs **/
+
+.showcase-blog {
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 900px) {
+  body {
+    max-width: 95%;
+    width: 100%;
+  }
+
+  .list-item-inline {
+    display: inline;
+    padding: 0rem;
+  }
+
+  .container-center {
+    width: auto;
+  }
+
+  .link-primary {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+
+  .link{
+    padding: 0.5rem 1.5rem;
+  }
+
+  .link-primary {
+    max-width: 140px;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 1rem auto;
+    text-align: center;
+   
+
+  }
 }

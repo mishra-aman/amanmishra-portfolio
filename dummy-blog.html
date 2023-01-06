@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blogs| Aman Mishra</title>
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">AMAN MISHRA</div>
+        <ul class="list-non-bullet nav-pills">
+          <li class="list-item-inline">
+            <a class="link link-active" href="/">Home</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="/projects.html">Projects</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="/blogs.html">Blogs</a>
+          </li>
+        </ul>
+      </nav>
+      <header class="hero">
+        <h1 class="hero-heading">
+          This is a  <span class="special-text">Blog</span>
+        </h1>
+      </header>
+
+      <article class="container-center showcase-blog">
+        <h2>The introduction page used this example to get familiar with Hooks:
+
+        </h2>
+        <img style="width: 700px;" src="./images/react-hook-text.png" alt="react-hook-text">
+
+        <h2>What’s a Hook?</h2>
+
+       <h4 style="font-weight:lighter">Our new example starts by importing the <span style="background-color: #fffae1";>useState</span> Hook from React:</h4>
+
+        </h5>
+        <img style="width: 700px;" src="./images/react-hook-img.png" alt="react-hook-img">
+        <p>
+          What is a Hook? A Hook is a special function that lets you “hook into” React features. 
+          For example,  <span style="background-color: #fffae1";>useState</span> is a Hook that lets you add React state to function components. We’ll learn other Hooks later.
+        </p>
+        <p>When would I use a Hook? 
+          If you write a function component and realize you need to add some state to it, previously you had to convert it to a class. Now you can use a Hook inside the existing function component. We’re going to do that right now!
+
+        </p>
+        <img  style="width: 700px;"src="./images/react-hook-note.png" alt="react-hook-note">
+
+
+        <h2>Declaring a State Variable</h2>
+
+        <h5>In a class, we initialize the count state to 0 by setting this.state to { count: 0 } in the constructor:</h5>
+        <img  style="width: 700px;"src="./images/react-hook-class-example.png" alt="react-hook-class-example">
+        <h5>In a function component, we have no this, so we can’t assign or read this.state. Instead, we call the  <span style="background-color: #fffae1";>useState</span> Hook directly inside our component:</h5>
+        <img style="width: 700px;"
+        
+        src="./images/react-hook-func-example.png" alt="react-hook-func-example">
+
+        <p> 
+          <strong>What does calling  <span style="background-color: #fffae1";>useState</span> do?</strong>
+           It declares a “state variable”. Our variable is called count but we could call it anything else, like banana. This is a way to “preserve” some values between the function calls —  <span style="background-color: #fffae1";>useState</span> is a new way to use the exact same capabilities that this.state provides in a class. Normally, variables “disappear” when the function exits but state variables are preserved by React.
+
+        </p>
+        <p><strong>do we pass to  <span style="background-color: #fffae1";>useState</span> as an argument?</strong>  The only argument to the useState() Hook is the initial state. Unlike with classes, the state doesn’t have to be an object. We can keep a number or a string if that’s all we need. In our example, we just want a number for how many times the user clicked, so pass 0 as initial state for our variable. (If we wanted to store two different values in state, we would call useState() twice.)
+
+        </p>
+        <p> <strong>What does  <span style="background-color: #fffae1";>useState</span> return?</strong>  It returns a pair of values: the current state and a function that updates it. This is why we write const [count, setCount] = useState(). This is similar to this.state.count and this.setState in a class, except you get them in a pair. If you’re not familiar with the syntax we used, we’ll come back to it at the bottom of this page.</p>
+        <h5>Now that we know what the  <span style="background-color: #fffae1";>useState</span> Hook does, our example should make more sense:
+
+        </h5>
+        <img style="width: 700px;"     src="./images/react-hook-func-example2.png" alt="react-hook-func-example2">
+        <h5>We declare a state variable called count, and set it to 0. React will remember its current value between re-renders, and provide the most recent one to our function. If we want to update the current count, we can call setCount.</h5>
+
+        <img style="width: 700px;" src="./images/react-hook-note2.png" alt="react-hook-note2">
+        <h1>Reading State</h1>
+        <h5>When we want to display the current count in a class, we read this.state.count:
+
+        </h5>
+        <img style="width: 700px;"src="./images/read-state-img.png" alt="read-state-img">
+        <h5>In a function, we can use count directly:</h5>
+        <img style="width: 700px;" src="./images/read-state-img2.png" alt="read-state-img2">
+        <h5>Updating State</h5>
+        <p>In a class, we need to call this.setState() to update the count state:
+
+        </p>
+        <img  style="width: 700px; "src="./images/class-state-call-img.png" alt="class-state-call-img">
+        <h5>In a function, we already have setCount and count as variables so we don’t need this:
+
+        </h5>
+        <img  style="width: 700px" src="./images/func-state-call-img.png" alt="func-state-call-img">
+       <h5>End of blog<h5>
+       <div>
+        <a class="link link-primary" href="./blogs.html">Back</a>
+       <a class="link link-primary" href="./dummy-blog2.html">Next</a>
+       </div>
+        
+
+      </article>
+    
+      
+
+      <footer class="footer">
+        <div class="footer-header">Connect with me</div>
+        <ul class="social-links list-non-bullet">
+          <li class="list-item-inline">
+            <a class="link" href="https://github.com/mishra-aman">Github </a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="https://twitter.com/shardamanm">Twitter</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="https://www.linkedin.com/in/aman-m-89256122b/">Linkedin</a>
+          </li>
+        </ul>
+      </footer>
+    
+</body>
+</html>
