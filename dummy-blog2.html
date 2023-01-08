@@ -1,98 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Blogs| Aman Mishra</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navigation container">
-        <div class="nav-brand">AMAN MISHRA</div>
-        <ul class="list-non-bullet nav-pills">
-          <li class="list-item-inline">
-            <a class="link link-active" href="/">Home</a>
-          </li>
-          <li class="list-item-inline">
-            <a class="link" href="/projects.html">Projects</a>
-          </li>
-          <li class="list-item-inline">
-            <a class="link" href="/blogs.html">Blogs</a>
-          </li>
-        </ul>
-      </nav>
-      <header class="hero">
-        <h1 class="hero-heading">
-          This is a  <span class="special-text">Blog</span>
-        </h1>
-      </header>
+      <div class="nav-brand">AMAN MISHRA</div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link link-active" href="/">Home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/projects.html">Projects</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/blogs.html">Blogs</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <h1 class="hero-heading">
+        How to deploy your app with <span class="special-text">Vercel</span>
+      </h1>
+    </header>
 
-     
-      <article class="container-center showcase-blog">
-        <p>Creating an automatic Deployment begins by importing a Git repository on Vercel. This repository can either be private or public. To setup a Git repository, click the New Project button from the Vercel dashboard and select one of the following Git providers:</p>
-        <ul>
-          <li>-Github</li>
-          <li>-Gitlab</li>
-          <li>-Bitbucket</li>
-        </ul>
-        <h5>Deploying your application using Vercel's Git integration gives you:
+    <article class="container-center showcase-blog">
+      <p>
+        Creating an automatic Deployment begins by importing a Git repository on
+        Vercel. This repository can either be private or public. To setup a Git
+        repository, click the New Project button from the Vercel dashboard and
+        select one of the following Git providers:
+      </p>
+      <ul>
+        <li>-Github</li>
+        <li>-Gitlab</li>
+        <li>-Bitbucket</li>
+      </ul>
+      <h5>
+        Deploying your application using Vercel's Git integration gives you:
+      </h5>
 
-        </h5>
+      <ul>
+        <li>
+          -Simplified collaboration through pull requests or merge requests
+        </li>
+        <li>
+          -The ability to test new features and changes using Preview
+          Deployments before merging to the main branch to automatically create
+          a Production Deployment
+        </li>
+        <li>
+          -The ability to receive live feedback in preview environments with the
+          Comments feature (on supported Git providers).
+        </li>
+      </ul>
+      <h2>Vercel CLI</h2>
+      <p>
+        Vercel CLI allows you to deploy your Projects directly from the Command
+        Line Interface (CLI). You can use this deployment method whether your
+        project is connected to a Git repository or not. For a new Project, the
+        first deploy will ask to link your local directory to the Vercel
+        Project. This is done by running the vercel command in your local
+        project directory.
+      </p>
+      <img
+        style="width: 900px"
+        src="./images/vercel-image1.png"
+        alt="vercel-image1"
+      />
+      <p>
+        Upon creating the first Deployment for a Project, the vercel command
+        creates a Production Deployment. After running this command, a .vercel
+        directory is added at the root of your project folder. It contains both
+        the organization and project ID. Vercel CLI automatically detects the
+        framework your project is using. After the initial step, you can run the
+        vercel command again to create a Preview Deployment. To create a
+        Production Deployment, use the vercel --prod command.
+      </p>
+      <img
+        style="width: 900px"
+        src="./images/vercel-image2.png"
+        alt="vercel-image2"
+      />
+      <h2>Deploy Hooks</h2>
+      <p>
+        Deploy Hooks are another way of creating deployments on Vercel. However,
+        a connection to a Git repository is still necessary in order to use
+        Deploy Hooks. The Deploy Hooks method is useful when the changes in an
+        application depend on external events. If these changes are related to
+        content and are made directly in a Headless Content Management System
+        (CMS) or database, you may want to trigger deployments without touching
+        code. For example, you may want to trigger a deployment when a new blog
+        post is published or when an existing blog post is updated. To use this
+        deployment method, you have to generate a URL that accepts HTTP GET or
+        POST requests to trigger deployments and re-run the Build Step without
+        needing to push a new git commit. The URL generated is unique for every
+        project.
+      </p>
+      <h2>Vercel API</h2>
+      <p>
+        The Vercel API is used to create Deployments by making an HTTP POST
+        request to the relevant endpoint. The request's body will include all
+        the files you want to deploy. You will have to generate a SHA for each
+        file and upload using the Vercel API. This deployment method is helpful
+        for projects that use a custom workflow and add custom domains to a
+        multi-tenant application or integrate a third-party service that is not
+        currently supported by the Vercel platform. Find more information about
+        the Vercel API endpoint in the API reference.
+      </p>
 
-        <ul>
-          <li>-Simplified collaboration through pull requests or merge requests</li>
-          <li>-The ability to test new features and changes using Preview Deployments before merging to the main branch to automatically create a Production Deployment
-          </li>
-          <li>-The ability to receive live feedback in preview environments with the Comments feature (on supported Git providers).
-          </li>
-        </ul>
-        <h2>Vercel CLI</h2>
-        <p>Vercel CLI allows you to deploy your Projects directly from the Command Line Interface (CLI). You can use this deployment method whether your project is connected to a Git repository or not.
+      <a class="link link-primary" href="./dummy-blog.html">Back</a>
+    </article>
 
-          For a new Project, the first deploy will ask to link your local directory to the Vercel Project. This is done by running the vercel command in your local project directory.
-          
-          </p>
-          <img  style="width: 700px" src="./images/vercel-image1.png" alt="vercel-image1">
-          <p>Upon creating the first Deployment for a Project, the vercel command creates a Production Deployment.
-
-            After running this command, a .vercel directory is added at the root of your project folder. It contains both the organization and project ID. Vercel CLI automatically detects the framework your project is using.
-            
-            After the initial step, you can run the vercel command again to create a Preview Deployment. To create a Production Deployment, use the vercel --prod command.</p>
-            <img style="width: 700px" src="./images/vercel-image2.png" alt="vercel-image2">
-            <h2>Deploy Hooks</h2>
-            <p>Deploy Hooks are another way of creating deployments on Vercel. However, a connection to a Git repository is still necessary in order to use Deploy Hooks.
-
-              The Deploy Hooks method is useful when the changes in an application depend on external events. If these changes are related to content and are made directly in a Headless Content Management System (CMS) or database, you may want to trigger deployments without touching code. For example, you may want to trigger a deployment when a new blog post is published or when an existing blog post is updated.
-              
-              To use this deployment method, you have to generate a URL that accepts HTTP GET or POST requests to trigger deployments and re-run the Build Step without needing to push a new git commit. The URL generated is unique for every project.
-              
-              </p>
-              <h2>Vercel API</h2>
-              <p>The Vercel API is used to create Deployments by making an HTTP POST request to the relevant endpoint. The request's body will include all the files you want to deploy. You will have to generate a SHA for each file and upload using the Vercel API.
-
-                This deployment method is helpful for projects that use a custom workflow and add custom domains to a multi-tenant application or integrate a third-party service that is not currently supported by the Vercel platform.
-                
-                Find more information about the Vercel API endpoint in the API reference.</p>
-                  
-                <a class="link link-primary" href="./dummy-blog.html">Back</a>
-
-      </article>
-
-      <footer class="footer">
-        <div class="footer-header">Connect with me</div>
-        <ul class="social-links list-non-bullet">
-          <li class="list-item-inline">
-            <a class="link" href="https://github.com/mishra-aman">Github </a>
-          </li>
-          <li class="list-item-inline">
-            <a class="link" href="https://twitter.com/shardamanm">Twitter</a>
-          </li>
-          <li class="list-item-inline">
-            <a class="link" href="https://www.linkedin.com/in/aman-m-89256122b/">Linkedin</a>
-          </li>
-        </ul>
-      </footer>
-    
-</body>
+    <footer class="footer">
+      <div class="footer-header">Connect with me</div>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/mishra-aman">Github </a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/shardamanm">Twitter</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://www.linkedin.com/in/aman-m-89256122b/"
+            >Linkedin</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
