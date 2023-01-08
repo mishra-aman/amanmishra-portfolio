@@ -196,12 +196,14 @@ span {
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 375px) {
   body {
     width: 100%;
     margin: 0;
   }
-
+  nav {
+    width: 100%;
+  }
   .navigation.container {
     padding: 1rem 5rem;
     width: 60%;
@@ -217,9 +219,6 @@ span {
   .social-links {
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
-  }
-  section {
     width: 90%;
   }
 }
