@@ -9,7 +9,6 @@
 body {
   font-family: "Quicksand", sans-serif;
   margin: 0px auto;
- 
 }
 
 hr {
@@ -50,7 +49,6 @@ hr {
 
 .list-non-bullet {
   list-style: none;
-
 }
 
 .list-item-inline {
@@ -135,8 +133,8 @@ span {
 }
 
 .footer .footer-header {
-    font-weight: bold;
-    font-size: large;
+  font-weight: bold;
+  font-size: large;
 }
 .footer ul {
   padding-inline-start: 0px;
@@ -184,9 +182,7 @@ span {
 }
 
 @media (max-width: 768px) {
- 
-
-  .link{
+  .link {
     padding: 0.5rem 1.5rem;
   }
 
@@ -197,7 +193,33 @@ span {
     color: #fff;
     margin: 1rem auto;
     text-align: center;
-   
+  }
+}
 
+@media (max-width: 320px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navigation.container {
+    padding: 1rem 5rem;
+    width: 60%;
+  }
+  .nav-pills {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .social-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+  section {
+    width: 90%;
   }
 }
